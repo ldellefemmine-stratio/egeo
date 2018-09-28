@@ -1,6 +1,6 @@
 # Changelog
 
-## 13.1.1 (upcoming)
+## 13.1.1 (September 28, 2018)
 
 **Fixed bugs:**
  * st-two-list: fix bad behavior with virtual scroll and checkbox all, when an item is added to selected list
