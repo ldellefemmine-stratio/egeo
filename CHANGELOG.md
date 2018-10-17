@@ -1,6 +1,6 @@
 # Changelog
 
-## 13.2.1 (upcoming)
+## 13.2.1 (October 17, 2018)
 
 **Others:**
 
