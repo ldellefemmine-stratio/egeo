@@ -1,6 +1,6 @@
 # Changelog
 
-## 13.4.0 (upcoming)
+## 13.4.0 (November 19, 2018)
 
 **New features:**
 
