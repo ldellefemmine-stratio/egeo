@@ -1,6 +1,6 @@
 # Changelog
 
-## 15.0.1 (upcoming)
+## 15.0.1 (January 14, 2019)
 
 **New features:**
 
