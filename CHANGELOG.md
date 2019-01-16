@@ -1,6 +1,6 @@
 # Changelog
 
-## 15.0.2 (upcoming)
+## 15.0.2 (January 16, 2019)
 
 **Fixed bugs:**
 
