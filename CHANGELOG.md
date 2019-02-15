@@ -1,6 +1,6 @@
 # Changelog
 
-## 15.0.3 (upcoming)
+## 15.0.3 (February 15, 2019)
 
 **Fixed bugs:**
 
