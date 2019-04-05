@@ -1,6 +1,6 @@
 # Changelog
 
-## 16.1.0 (upcoming)
+## 16.1.0 (April 05, 2019)
 
 **New features:**
 
