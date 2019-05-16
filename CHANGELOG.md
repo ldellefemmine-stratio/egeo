@@ -6,6 +6,8 @@
 
 * st-color-picker: Create component
 * st-two-list-selection: Allow to show dropdown menu options  if it is a non-editable list.
+* Construction tasks refactor
+* Egeo Demo AOT compilation
 
 **Fixed bugs:**
 
