@@ -15,7 +15,7 @@
       "build:demo-app": "gulp demo-app:copy:sourcecode && ng build --project=egeo-demo",
       "test": "ng test --source-map=true --watch=false --code-coverage --progress=false --project=egeo",
       "test:watch": "karma start test/karma.conf.js --auto-watch --no-single-run",
-      "lint": "gulp lint",
+      "lint": "ng lint",
       "replace": "json -I -f package.json -e",
       "commit": "git-cz",
       "serve:coverage": "http-server target/html",

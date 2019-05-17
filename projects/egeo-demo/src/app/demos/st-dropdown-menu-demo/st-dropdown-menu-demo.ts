@@ -57,7 +57,7 @@ export class StDropdownMenuDemoComponent {
    }
 
    getVisualMode(menuId: number): StDropDownVisualMode {
-      return menuId % 2 ? StDropDownVisualMode.OPTION_LIST: StDropDownVisualMode.MENU_LIST;
+      return menuId % 2 ? StDropDownVisualMode.OPTION_LIST : StDropDownVisualMode.MENU_LIST;
    }
 
    private generateNormal(): StDropDownMenuItem[] {
