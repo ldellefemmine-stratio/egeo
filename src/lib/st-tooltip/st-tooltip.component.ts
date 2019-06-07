@@ -8,14 +8,14 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-import { Component, ElementRef, HostBinding, HostListener, Input } from '@angular/core';
+import { Component, ElementRef, HostBinding, HostListener, Input, AfterViewInit } from '@angular/core';
 
 @Component({
    selector: '[st-tooltip]',
    styleUrls: ['./st-tooltip.component.scss'],
    templateUrl: './st-tooltip.component.html'
 })
-export class StTooltipComponent {
+export class StTooltipComponent implements AfterViewInit {
 
    @HostBinding('class.st-tooltip') classTooltip: boolean;
    @HostBinding('class.st-tooltip-on') classTooltipOn: boolean;
@@ -54,6 +54,9 @@ export class StTooltipComponent {
       this.classTooltip = false;
       this.classTooltipOn = false;
       this.showOnClick = false;
+   }
+
+   ngAfterViewInit(): void {
       this.title = this.el.nativeElement.title;
    }
 }
