@@ -98,7 +98,8 @@ module.exports = function(config) {
          suite: ''
       },
 
-      logLevel: config.LOG_INFO,
+      logLevel: config.
+      LOG_INFO,
       autoWatch: false,
       singleRun: true,
       failOnEmptyTestSuite: false,

@@ -8,7 +8,7 @@
  *
  * SPDX-License-Identifier: Apache-2.0.
  */
-import { Component, HostBinding } from '@angular/core';
+import { Component, HostBinding, ChangeDetectorRef, ElementRef } from '@angular/core';
 
 import { StTooltipComponent } from '../st-tooltip/st-tooltip.component';
 
@@ -20,4 +20,8 @@ import { StTooltipComponent } from '../st-tooltip/st-tooltip.component';
 
 export class StLabelComponent extends StTooltipComponent {
    @HostBinding('class.st-label') classStLabel: boolean = true;
+
+   constructor(_el: ElementRef, _cd: ChangeDetectorRef) {
+      super(_el, _cd);
+   }
 }
