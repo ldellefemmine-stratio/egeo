@@ -35,7 +35,7 @@ class TestStFNComponent {
    visible: boolean;
    autoCloseTime: number;
    clickLinkTemplate: EventEmitter<any> = new EventEmitter();
-   @ViewChild('notification') dropdownItem: StForegroundNotificationsComponent;
+   @ViewChild('notification', /* TODO: add static flag */ {}) dropdownItem: StForegroundNotificationsComponent;
 
    generateHtmlNotifications(): StNotificationElement[] {
       return [

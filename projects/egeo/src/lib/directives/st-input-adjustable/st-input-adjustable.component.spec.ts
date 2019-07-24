@@ -25,7 +25,7 @@ let title: string = '';
 })
 class TestStInputAdjustableComponent {
    @Input() title: string;
-   @ViewChild(StInputAdjustable) adjustableInput: StInputAdjustable;
+   @ViewChild(StInputAdjustable, /* TODO: add static flag */ {}) adjustableInput: StInputAdjustable;
 }
 
 describe('StInputAdjustable', () => {

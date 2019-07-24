@@ -252,7 +252,7 @@ class FormReactiveComponent implements OnInit {
       pattern: 'Invalid value'
    };
 
-   @ViewChild('input') input: StInputComponent;
+   @ViewChild('input', /* TODO: add static flag */ {}) input: StInputComponent;
 
    constructor(private _fb: FormBuilder) {
    }

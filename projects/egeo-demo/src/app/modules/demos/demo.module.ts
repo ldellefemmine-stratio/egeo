@@ -20,7 +20,10 @@ export const routes: Routes = [
    { path: '', redirectTo: 'demo/alerts-demo' },
    {
       path: '', component: DemoLayoutComponent, children: [
-         { path: 'demo', loadChildren: './demo-loader.module#DemoLoaderModule' }
+         {
+            path: 'demo',
+            loadChildren: () => import('./demo-loader.module').then(m => m.DemoLoaderModule)
+         }
       ]
    }
 ];

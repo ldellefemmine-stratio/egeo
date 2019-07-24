@@ -761,7 +761,7 @@ describe('StFormComponent', () => {
 class FormInTemplateDrivenFormComponent {
    public schema: any = _cloneDeep(JSON_SCHEMA);
    public model: any = {};
-   @ViewChild('formModel') public formModel: NgForm;
+   @ViewChild('formModel', /* TODO: add static flag */ {}) public formModel: NgForm;
 
    constructor() {
       this.schema.properties.security = {

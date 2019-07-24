@@ -14,7 +14,8 @@ import { FormControl, FormsModule, NgControl, ReactiveFormsModule } from '@angul
 import { By } from '@angular/platform-browser';
 
 import { SelectOneDispatcher } from '../utils/unique-dispatcher';
-import { StRadioComponent, StRadioGroupComponent } from './st-radio.component';
+import { StRadioComponent } from './st-radio.component';
+import { StRadioGroupComponent } from './st-radio-group.component';
 
 describe('StRadioGroup', () => {
 

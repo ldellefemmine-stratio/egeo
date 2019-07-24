@@ -87,8 +87,8 @@ export class StDropdownMenuComponent implements AfterViewInit, OnInit, OnChanges
    /** @output {StDropDownMenuItem} [change] Event emitted when user select an item */
    @Output() change: EventEmitter<StDropDownMenuItem> = new EventEmitter<StDropDownMenuItem>();
 
-   @ViewChild('buttonId') buttonElement: ElementRef;
-   @ViewChild('itemList') itemListElement: ElementRef;
+   @ViewChild('buttonId', { static: false }) buttonElement: ElementRef;
+   @ViewChild('itemList', { static: false }) itemListElement: ElementRef;
 
    widthMenu: string = '0px';
 

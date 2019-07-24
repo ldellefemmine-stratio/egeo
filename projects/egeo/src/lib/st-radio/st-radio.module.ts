@@ -11,8 +11,9 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
-import { StRadioComponent, StRadioGroupComponent } from './st-radio.component';
+import { StRadioComponent } from './st-radio.component';
 import { StLabelModule } from '../st-label/st-label.module';
+import { StRadioGroupComponent } from './st-radio-group.component';
 
 @NgModule({
    imports: [

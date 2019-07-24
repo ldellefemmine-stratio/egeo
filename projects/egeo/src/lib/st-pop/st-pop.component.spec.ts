@@ -36,7 +36,7 @@ class TestComponent {
    @Input() hidden: boolean = true;
    @Input() placement: StPopPlacement = StPopPlacement.TOP;
 
-   @ViewChild('popComponent') popComponent: StPopComponent;
+   @ViewChild('popComponent', /* TODO: add static flag */ {}) popComponent: StPopComponent;
 }
 
 describe('StPopComponent', () => {

@@ -61,8 +61,8 @@ export class StSelectComponent implements AfterViewInit, ControlValueAccessor, O
    @Output() expand: EventEmitter<boolean> = new EventEmitter<boolean>();
    @Output() select: EventEmitter<any> = new EventEmitter<any>();
 
-   @ViewChild('input') inputElement: ElementRef;
-   @ViewChild('button') buttonElement: ElementRef;
+   @ViewChild('input', { static: false }) inputElement: ElementRef;
+   @ViewChild('button', { static: false }) buttonElement: ElementRef;
 
    @HostBinding('class.st-select-opened')
 

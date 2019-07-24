@@ -10,7 +10,6 @@
  */
 import {
    ControlValueAccessor,
-   FormGroup,
    NG_VALUE_ACCESSOR
 } from '@angular/forms';
 import {
@@ -68,7 +67,7 @@ export class StPageTitleComponent implements ControlValueAccessor, OnInit {
    @Output() clickButton: EventEmitter<any> = new EventEmitter();
    @Output() edit: EventEmitter<string> = new EventEmitter();
 
-   @ViewChild('input') input: any;
+   @ViewChild('input', { static: false }) input: any;
 
    public focus: boolean = false;
    public hasPreTitleValue: boolean = false;

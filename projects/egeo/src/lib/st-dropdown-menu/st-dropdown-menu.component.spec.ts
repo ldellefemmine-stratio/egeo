@@ -73,7 +73,7 @@ class TestDropdownComponent {
    items: StDropDownMenuItem[];
    active: boolean = false;
    selected: StDropDownMenuItem;
-   @ViewChild('dropdown') dropdownItem: StDropdownMenuComponent;
+   @ViewChild('dropdown', /* TODO: add static flag */ {}) dropdownItem: StDropdownMenuComponent;
    dropdownWidth: string = '300px';
    visualMode: StDropDownVisualMode = StDropDownVisualMode.OPTION_LIST;
    keyBoardMove: boolean = false;
