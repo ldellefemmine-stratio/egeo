@@ -1,12 +1,15 @@
 # Changelog
 
-## 16.5.0 (upcoming)
+## 17.0.0 (upcoming)
 
 **New features:**
 
 * st-color-picker: Create component
 * st-two-list-selection: Allow to show dropdown menu options  if it is a non-editable list.
 * st-dropdown-menu: Allow to custom label and icon colors
+* st-two-list-selection: allow to show dropdown menu options  if it is a non-editable list.
+* Construction tasks refactor
+* Egeo Demo AOT compilation
 
 **Fixed bugs:**
 
@@ -21,7 +24,8 @@
 **Others:**
 
 * st-breadcrumbs: change 'title mode' links color to default
-* Update icon font to 1.12
+* Update icon font to 1.14
+* Update lodash to 4.17.13
 
 
 ## 16.4.0 (June 10, 2019)

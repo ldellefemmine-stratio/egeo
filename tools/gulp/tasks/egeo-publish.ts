@@ -27,10 +27,7 @@ export const releasePackages = [
 const argv = minimist(process.argv.slice(3));
 
 /** Task that builds all releases that will be published. */
-task(':publish:build-releases', sequenceTask(
-   'clean',
-   releasePackages.map(packageName => `${packageName}:build-release`)
-));
+task(':publish:build-releases', execTask('./node/npm', ['run-script', 'build']));
 
 /** Make sure we're logged in. */
 task(':publish:whoami', execTask('./node/npm', ['whoami'], {
@@ -39,7 +36,7 @@ task(':publish:whoami', execTask('./node/npm', ['whoami'], {
 }));
 
 function _execNpmPublish(label: string, packageName: string): Promise<{}> | undefined {
-   const packageDir = join(buildConfig.outputDir, 'releases', packageName);
+   const packageDir = join(buildConfig.outputDir, packageName);
 
    if (!statSync(packageDir).isDirectory()) {
       return;
@@ -116,7 +113,5 @@ task(':publish', async () => {
 task('publish', sequenceTask(
    ':publish:whoami',
    ':publish:build-releases',
-   'build:styles',
-   'validate-release:check-bundles',
    ':publish'
 ));
