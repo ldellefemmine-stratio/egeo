@@ -1,5 +1,9 @@
 # Changelog
 
+## 18.0.0 (upcoming)
+
+* Pending changelog
+
 ## 17.0.0 (upcoming)
 
 **New features:**
@@ -10,12 +14,17 @@
 * st-two-list-selection: allow to show dropdown menu options  if it is a non-editable list.
 * Construction tasks refactor
 * Egeo Demo AOT compilation
+* Included 'xs' breakpoint into grid system
 
 **Fixed bugs:**
 
 * st-table: Fix error with selectableAll and sortable columns
 * st-foreground-notifications: Fix selected current notification
 * st-header: Fixed current active item
+* Construction tasks: Fixed package.json main config
+* theme: fix st-widget imports
+* fix prismjs dependency
+* ngx-virtual-scroller: Put version to 3.0.2 to fix compatibility error with internal library tweenjs
 
 **Breaking changes:**
 
